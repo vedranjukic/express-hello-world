@@ -1,0 +1,4 @@
+FROM codeany/full
+USER root
+RUN apt-get install telnet -y
+USER codeany
