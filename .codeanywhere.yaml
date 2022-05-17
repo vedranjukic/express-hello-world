@@ -1,0 +1,26 @@
+services:
+  - name: rte
+    image: codeany/full
+    env: []
+    volumeMounts: []
+    limits:
+      cpu: 1
+      memory: 4
+  - name: db
+    image: mysql:8
+    env:
+      - name: MYSQL_ROOT_PASSWORD
+        value: testpass
+    volumeMounts: []
+    limits:
+      cpu: 1
+      memory: 4
+  - name: redis
+    image: redis
+    env: []
+    volumeMounts: []
+    limits:
+      cpu: 1
+      memory: 4
+volumes: []
+tasks: []
