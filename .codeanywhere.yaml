@@ -1,6 +1,8 @@
 services:
   - name: rte
-    image: codeany/full
+    build:
+      context: .
+      dockerfile: .Dockerfile.ca
     env: []
     volumeMounts: []
     limits:
