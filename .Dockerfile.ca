@@ -1,4 +1,5 @@
 FROM codeany/full
 USER root
 RUN apt-get install telnet -y
+RUN apt-get install htop -y
 USER codeany
